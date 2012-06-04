@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KoalaController</string>
+    <string name="right_motor">Right motor</string>
+    <string name="send_message_to_adk">Send message to ADK</string>
+    <string name="motors_speed">Motors speed</string>
+    <string name="left_motor_">"Left motor  "</string>
+    <string name="reverse">Reverse</string>
+    <string name="motors_position">Motors position</string>
+    <string name="l7">L7</string>
+    <string name="l6">L6</string>
+    <string name="l5">L5</string>
+    <string name="l4">L4</string>
+    <string name="l3">L3</string>
+    <string name="l2">L2</string>
+    <string name="l1">L1</string>
+    <string name="l0">L0</string>
+    <string name="r0">R0</string>
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+    <string name="r4">R4</string>
+    <string name="r5">R5</string>
+    <string name="r6">R6</string>
+    <string name="r7">R7</string>
+
+</resources>

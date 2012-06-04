@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/accelerometerLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/x_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x="
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/y_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="y="
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/y"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/z_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="z="
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/z"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#D00000"
+            android:textSize="15pt" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connectToKC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ToggleButton
+            android:id="@+id/toggleRobot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:height="50sp"
+            android:width="100sp" />
+    </FrameLayout>
+
+</LinearLayout>

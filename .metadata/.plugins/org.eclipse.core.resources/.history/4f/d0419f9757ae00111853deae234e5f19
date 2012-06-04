@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="connectToKC">Waiting for bluetooth connections</string>
+    <string name="app_name">KoalaController - Server</string>
+    
+    <string name="scanning">Scanning for devices…</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">Connecting…</string>
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Not connected</string>
+    <string name="x_">x=</string>
+    
+    <string name="l7">L7</string>
+    <string name="l6">L6</string>
+    <string name="l5">L5</string>
+    <string name="l4">L4</string>
+    <string name="l3">L3</string>
+    <string name="l2">L2</string>
+    <string name="l1">L1</string>
+    <string name="l0">L0</string>
+    <string name="r0">R0</string>
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+    <string name="r4">R4</string>
+    <string name="r5">R5</string>
+    <string name="r6">R6</string>
+    <string name="r7">R7</string>
+
+</resources>

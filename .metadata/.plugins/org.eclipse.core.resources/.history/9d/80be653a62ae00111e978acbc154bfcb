@@ -1,0 +1,296 @@
+package pl.edu.agh.pros.bt.client;
+
+import pl.edu.agh.pros.bt.client.blue.BluetoothManager;
+import pl.edu.agh.pros.bt.client.gravity.GravityListener;
+import pl.edu.agh.pros.bt.client.gravity.GravityVO;
+import pl.edu.agh.pros.bt.manager.SensorsManager;
+import android.app.Activity;
+import android.app.TabActivity;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.Context;
+import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.PowerManager;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.TabHost;
+import android.widget.TextView;
+import android.widget.ToggleButton;
+
+public class KoalaControllerClientActivity extends TabActivity {
+
+	private static final int REQUEST_CONNECT_DEVICE = 1;
+	private static final int REQUEST_ENABLE_BT = 2;
+
+	private static final byte[] STOP_SEQUENCE = {0, 0, 0};
+
+	// Message types sent from the BluetoothManager Handler
+	public static final int MESSAGE_STATE_CHANGE = 3;
+	public static final int MESSAGE_READ = 4;
+	public static final int MESSAGE_WRITE = 5;
+	public static final int MESSAGE_DEVICE_NAME = 6;
+	public static final int MESSAGE_TOAST = 7;
+
+	// Key names received from the BluetoothManager Handler
+	public static final String DEVICE_NAME = "device_name";
+	public static final String TOAST = "toast";
+	// Name of the connected device
+	private String mConnectedDeviceName = null;
+
+	private SensorManager mSensorManager;
+	private Sensor mGravity;
+
+	private boolean connected = false;
+
+	private BluetoothAdapter mBluetoothAdapter;
+	private BluetoothManager mBluetoothManager;
+	private PowerManager.WakeLock wl;
+
+	private SensorsManager sensorsManager;
+
+	private TextView xView;
+	private TextView yView;
+	private TextView zView;
+
+	private TextView connectionStatus;
+	private ToggleButton toggleButton;
+
+	private Handler gravityHandler = new Handler() {
+
+		GravityVO previous;
+
+		@Override
+		public void handleMessage(Message msg) {
+			GravityVO t = (GravityVO) msg.obj;
+			if (t != null && !t.equals(previous)) {
+				// update UI
+				xView.setText(Integer.toString(t.getX()));
+				yView.setText(Integer.toString(t.getY()));
+				zView.setText(Integer.toString(t.getZ()));
+				if (toggleButton.isChecked()) {
+					sendMessageBT(t.getBytes());
+				}
+			}
+		}
+	};
+
+	// The Handler that gets information back from the BluetoothChatService
+	private final Handler bluetoothHandler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+				case MESSAGE_STATE_CHANGE :
+					switch (msg.arg1) {
+						case BluetoothManager.STATE_CONNECTED :
+							setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
+							break;
+						case BluetoothManager.STATE_CONNECTING :
+							setStatus(getString(R.string.title_connecting));
+							break;
+						case BluetoothManager.STATE_LISTEN :
+						case BluetoothManager.STATE_NONE :
+							setStatus(getString(R.string.title_not_connected));
+							break;
+					}
+					break;
+				case MESSAGE_READ :
+					if (!toggleButton.isChecked()) {
+						break;
+					}
+					byte[] readBuf = (byte[]) msg.obj;
+					byte length = readBuf[0];
+					try {
+						if (sensorsManager != null) {
+							sensorsManager.updateSensors(String.valueOf(new String(readBuf).toCharArray(), 1, length));
+						}
+					} catch (Exception e) {
+						// ignore
+					}
+
+					break;
+				case MESSAGE_DEVICE_NAME :
+					// save the connected device's name
+					mConnectedDeviceName = msg.getData().getString(DEVICE_NAME);
+					break;
+			}
+		}
+
+	};
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+
+		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+		mGravity = mSensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
+		mSensorManager.registerListener(new GravityListener(gravityHandler), mGravity, SensorManager.SENSOR_DELAY_GAME);
+
+		xView = (TextView) findViewById(R.id.x);
+		yView = (TextView) findViewById(R.id.y);
+		zView = (TextView) findViewById(R.id.z);
+		connectionStatus = (TextView) findViewById(R.id.connectionStatus);
+		toggleButton = (ToggleButton) findViewById(R.id.toggleRobot);
+		toggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if (!isChecked) {
+					sendMessageBT(STOP_SEQUENCE);
+				}
+			}
+		});
+
+		// create buttons listeners
+		Button bt = (Button) findViewById(R.id.connectButton);
+		bt.setText("Connect");
+		bt.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				if (!connected) {
+					connected = true;
+					Intent serverIntent = new Intent(v.getContext(), DeviceListActivity.class);
+					startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
+				} else {
+					// disconect
+					mBluetoothManager.stop();
+					connected = false;
+				}
+			}
+		});
+
+		// Get local Bluetooth adapter
+		mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+		// If the adapter is null, then Bluetooth is not supported
+		if (mBluetoothAdapter == null) {
+			finish();
+			return;
+		}
+
+		// Getting a WakeLock. This insures that the phone does not sleep
+		// while driving the robot.
+		PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+		wl = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, "My Tag");
+		wl.acquire();
+
+		prepareUI();
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+
+		// If BT is not on, request that it be enabled.
+		// setupChat() will then be called during onActivityResult
+		if (!mBluetoothAdapter.isEnabled()) {
+			Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+			startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+			// Otherwise, setup the chat session
+		} else {
+			mBluetoothManager = new BluetoothManager(this, bluetoothHandler);
+		}
+	}
+
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		switch (requestCode) {
+			case REQUEST_CONNECT_DEVICE :
+				// When DeviceListActivity returns with a device to connect
+				if (resultCode == Activity.RESULT_OK) {
+					connectDevice(data);
+				}
+				break;
+			case REQUEST_ENABLE_BT :
+				// When the request to enable Bluetooth returns
+				if (resultCode == Activity.RESULT_OK) {
+					mBluetoothManager = new BluetoothManager(this, bluetoothHandler);
+				} else {
+					// User did not enable Bluetooth or an error occurred
+					finish();
+				}
+		}
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		// Performing this check in onResume() covers the case in which BT was
+		// not enabled during onStart(), so we were paused to enable it...
+		// onResume() will be called when ACTION_REQUEST_ENABLE activity
+		// returns.
+		if (mBluetoothManager != null) {
+			// Only if the state is STATE_NONE, do we know that we haven't
+			// started already
+			if (mBluetoothManager.getState() == BluetoothManager.STATE_NONE) {
+				// Start the Bluetooth services
+				mBluetoothManager.start();
+			}
+		}
+
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		// Release the WakeLock so that the phone can go to sleep to preserve
+		// battery.
+		wl.release();
+	}
+
+	private void prepareUI() {
+
+		TabHost mTabHost = getTabHost();
+
+		mTabHost.addTab(mTabHost.newTabSpec("connect").setIndicator("Control").setContent(R.id.controlLayout));
+		mTabHost.addTab(mTabHost.newTabSpec("sensors").setIndicator("Sensors").setContent(R.id.sensorsLayout));
+
+		mTabHost.setCurrentTab(0);
+
+		sensorsManager = new SensorsManager(this);
+		sensorsManager.init();
+	}
+
+	/**
+	 * Sends a message.
+	 * 
+	 * @param message
+	 *            A string of text to send.
+	 */
+	private void sendMessageBT(byte[] message) {
+		if (mBluetoothManager == null) {
+			return;
+		}
+		// Check that we're actually connected before trying anything
+		if (mBluetoothManager.getState() != BluetoothManager.STATE_CONNECTED) {
+			return;
+		}
+
+		// Check that there's actually something to send
+		if (message.length > 0) {
+			// Get the message bytes and tell the BluetoothManager to write
+			mBluetoothManager.write(message);
+		}
+	}
+
+	private void connectDevice(Intent data) {
+		// Get the device MAC address
+		String address = data.getExtras().getString(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
+		// Get the BluetoothDevice object
+		BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
+		// Attempt to connect to the device
+		mBluetoothManager.connect(device);
+	}
+
+	private void setStatus(String status) {
+		connectionStatus.setText(status);
+	}
+
+}

@@ -1,0 +1,384 @@
+!SESSION 2012-06-03 18:02:14.655 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/darek/workspace/koala_bt
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-03 18:03:39.565
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/KoalaController-BTC/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-06-03 18:03:39.566
+!MESSAGE Resource '/KoalaController-BTC/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-03 18:03:39.571
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/KoalaADK/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-06-03 18:03:39.571
+!MESSAGE Resource '/KoalaADK/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-03 18:03:39.571
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/KoalaController-BTS/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-06-03 18:03:39.571
+!MESSAGE Resource '/KoalaController-BTS/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-03 18:03:42.664
+!MESSAGE fileChanged: failed to find manifest package for project KoalaADK
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-03 18:03:44.606
+!MESSAGE fileChanged: failed to find manifest package for project KoalaController-BTC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-06-03 18:04:17.371
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2012-06-03 18:48:15.823 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.jobs 2 2 2012-06-03 18:49:58.271
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob
+!SESSION 2012-06-04 16:23:15.744 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-06-04 17:05:13.267
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.475
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.481
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.487
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.493
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.499
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.505
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.512
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.523
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.530
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.536
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.543
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.548
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.554
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.560
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.565
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:07:07.570
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.702
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.708
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.712
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.718
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.723
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.728
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.733
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.738
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.743
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.748
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.752
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.757
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.762
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.767
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.772
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:11:47.777
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.583
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.587
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.592
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.597
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.602
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.607
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.611
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.616
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.621
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.626
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.630
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.635
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.640
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.645
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.649
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:06.655
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.034
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.039
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.044
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.048
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.052
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.057
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.062
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.066
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.071
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.076
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.080
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.085
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.089
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.094
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.098
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:09.103
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.828
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l7
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.832
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.837
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.842
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.846
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.851
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.855
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.859
+!MESSAGE sensors.xml: Couldn't resolve resource @string/l0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.863
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r0
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.867
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.872
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r2
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.876
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r3
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.880
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r4
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.884
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r5
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.888
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r6
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-06-04 17:12:10.893
+!MESSAGE sensors.xml: Couldn't resolve resource @string/r7
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2012-06-04 17:15:43.414
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.6.1.v201112160242r37
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2012-06-04 17:15:44.065
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.4.0.v201112160242-rel-r37
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-06-04 17:18:34.737
+!MESSAGE main.xml: Could not create tab content because could not find view with id -1
+!STACK 0
+java.lang.RuntimeException: Could not create tab content because could not find view with id -1
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:615)
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:606)
+	at android.widget.TabHost$TabSpec.setContent(TabHost.java:460)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.setupTabHost(RenderSessionImpl.java:1258)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:1106)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:1184)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:341)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:321)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1361)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1115)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.activated(GraphicalEditorPart.java:941)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegatePageChange(LayoutEditorDelegate.java:450)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.pageChange(CommonXmlEditor.java:358)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:290)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2745)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1432)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.ui 4 4 2012-06-04 17:27:54.798
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2012-06-04 17:53:13.625 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-06-04 17:54:06.638
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
