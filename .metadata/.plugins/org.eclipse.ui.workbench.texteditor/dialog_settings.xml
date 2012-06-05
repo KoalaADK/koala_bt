@@ -3,18 +3,22 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="298" key="DIALOG_WIDTH"/>
 		<item value="101" key="DIALOG_Y_ORIGIN"/>
-		<item value="392" key="DIALOG_HEIGHT"/>
 		<item value="997" key="DIALOG_X_ORIGIN"/>
+		<item value="392" key="DIALOG_HEIGHT"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="mInputStream" key="selection"/>
+		<item value="mHandler" key="selection"/>
 		<list key="findhistory">
+			<item value="mHandler"/>
+			<item value="mBluetoothAdapter"/>
+			<item value="bluetoothHandler"/>
+			<item value="mBluetoothManager"/>
 			<item value="mInputStream"/>
 			<item value="off"/>
 		</list>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1368" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="106" y="24"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="66" y="24"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="66" y="24"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="58" y="24"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="106" y="24"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="58" y="24"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -25,7 +25,7 @@
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -34,16 +34,75 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaControllerServerActivity.java" partName="KoalaControllerServerActivity.java" path="/home/darek/workspace/koala_bt/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java" title="KoalaControllerServerActivity.java" tooltip="KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5844" selectionTopPixel="3421"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaControllerClientActivity.java" partName="KoalaControllerClientActivity.java" path="/home/darek/workspace/koala_bt/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java" title="KoalaControllerClientActivity.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5940" selectionTopPixel="1438"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BluetoothManager.java" partName="BluetoothManager.java" path="/home/darek/workspace/koala_bt/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java" title="BluetoothManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="768" selectionTopPixel="1041"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BluetoothManager.java" partName="BluetoothManager.java" path="/home/darek/workspace/koala_bt/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java" title="BluetoothManager.java" tooltip="KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="2740" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaActivity.java" partName="KoalaActivity.java" path="/home/darek/workspace/koala_bt/KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java" title="KoalaActivity.java" tooltip="KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2701"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SensorsManager.java" partName="SensorsManager.java" path="/home/darek/workspace/koala_bt/KoalaController-BTC/src/pl/edu/agh/pros/bt/sensor/SensorsManager.java" title="SensorsManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/sensor/SensorsManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/sensor/SensorsManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="1442" selectionTopPixel="374"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GravityVO.java" partName="GravityVO.java" path="/home/darek/workspace/koala_bt/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityVO.java" title="GravityVO.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityVO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="83" selectionTopPixel="68"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="KoalaADK Manifest" path="/home/darek/workspace/koala_bt/KoalaADK/AndroidManifest.xml" title="KoalaADK Manifest" tooltip="KoalaADK/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaADK/AndroidManifest.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="KoalaController-BTS Manifest" path="/home/darek/workspace/koala_bt/KoalaController-BTS/AndroidManifest.xml" title="KoalaController-BTS Manifest" tooltip="KoalaController-BTS/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTS/AndroidManifest.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="KoalaController-BTC Manifest" path="/home/darek/workspace/koala_bt/KoalaController-BTC/AndroidManifest.xml" title="KoalaController-BTC Manifest" tooltip="KoalaController-BTC/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KoalaController-BTC/AndroidManifest.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="BluetoothAdapter.class" partName="BluetoothAdapter.class" title="BluetoothAdapter.class" tooltip="android.bluetooth.BluetoothAdapter" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaADK/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.bluetooth(BluetoothAdapter.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.callhierarchy.view" partName="Call Hierarchy">
 <viewState search_scope_type="1"/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.ThreadView" partName="Threads">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -67,17 +126,19 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.HeapView" partName="Heap"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer"/>
+<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (6 items)"/>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="737" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -122,12 +183,16 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 <view id="com.google.gwt.eclipse.DevModeView" partName="Development Mode"/>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -280,11 +345,12 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.29872206"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29872206"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
@@ -464,24 +530,272 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.core.actionSet"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="adt.actionSet.lint"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.HeapView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.AllocTrackerView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.ThreadView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.NetworkStatsView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
+<view id="com.android.ide.eclipse.ddms.views.ThreadView"/>
+<view id="com.android.ide.eclipse.ddms.views.HeapView"/>
+<view id="com.android.ide.eclipse.ddms.views.AllocTrackerView"/>
+<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView"/>
+<view id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.DeviceView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.DeviceView" label="Devices"/>
+<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496241" ratioLeft="997" ratioRight="333" relationship="2" relative="devices">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="logcat" ratio="0.798722" ratioLeft="500" ratioRight="126" relationship="4" relative="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.3" ratioLeft="399" ratioRight="931" relationship="2" relative="devices"/>
+<info folder="true" part="ddms-detail" ratio="0.49946293" ratioLeft="465" ratioRight="466" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.ThreadView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
+<page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
+<page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
+<page content="com.android.ide.eclipse.ddms.views.NetworkStatsView" label="Network Statistics"/>
+<page content="com.android.ide.eclipse.ddms.views.FileExplorerView" label="File Explorer"/>
+<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="emulator" ratio="0.5" ratioLeft="250" ratioRight="250" relationship="4" relative="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.EmulatorControlView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="Emulator Control"/>
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaController-BTC/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.hardware(SensorManager.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/KoalaADK/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/KoalaController-BTS/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/KoalaController-BTC/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaADK/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.bluetooth(BluetoothAdapter.class"/>
+</editors>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="5413" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="91" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="10222" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="2">
+<position info="not_deleted" x="5215" y="4"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5496" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="3">
+<position info="not_deleted" x="2928" y="5"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="91" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2181" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="91" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2181" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="4449" y="0"/>
+</item>
+<item historyLabel="SensorManager.class" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="2806" y="0"/>
+</item>
+<item historyLabel="KoalaADK Manifest" index="5"/>
+<item historyLabel="KoalaController-BTS Manifest" index="6"/>
+<item historyLabel="KoalaController-BTC Manifest" index="7"/>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2181" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="2764" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5476" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="2764" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5476" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="3238" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="3">
+<position info="not_deleted" x="2740" y="6"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2173" y="8"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="2764" y="0"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="7664" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2173" y="8"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="3114" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="2">
+<position info="not_deleted" x="768" y="16"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="3">
+<position info="not_deleted" x="2740" y="6"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="3507" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="2173" y="8"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="3711" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5344" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="9546" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="9583" y="0"/>
+</item>
+<item historyLabel="BluetoothAdapter.class" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="9583" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5678" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5485" y="0"/>
+</item>
+<item historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5844" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="3">
+<position info="not_deleted" x="2740" y="6"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="2">
+<position info="not_deleted" x="768" y="16"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="3507" y="0"/>
+</item>
+<item historyLabel="BluetoothManager.java" index="2">
+<position info="not_deleted" x="768" y="16"/>
+</item>
+<item historyLabel="KoalaControllerClientActivity.java" index="1">
+<position info="not_deleted" x="5940" y="0"/>
+</item>
+<item active="true" historyLabel="KoalaControllerServerActivity.java" index="0">
+<position info="not_deleted" x="5844" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -496,50 +810,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="control.xml" tooltip="KoalaController-BTC/res/layout/control.xml">
-<persistable path="/KoalaController-BTC/res/layout/control.xml"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="BluetoothAdapter.class" tooltip="android.bluetooth.BluetoothAdapter">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaADK/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.bluetooth(BluetoothAdapter.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="KoalaController-BTC/res/layout/main.xml">
-<persistable path="/KoalaController-BTC/res/layout/main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="KoalaController-BTC/AndroidManifest.xml">
+<persistable path="/KoalaController-BTC/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="KoalaController-BTC/res/values/strings.xml">
-<persistable path="/KoalaController-BTC/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="KoalaController-BTS/AndroidManifest.xml">
+<persistable path="/KoalaController-BTS/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GravityListener.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityListener.java">
-<persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityListener.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="KoalaADK/AndroidManifest.xml">
+<persistable path="/KoalaADK/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SensorManager.class" tooltip="android.hardware.SensorManager">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaController-BTC/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.hardware(SensorManager.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GravityVO.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityVO.java">
 <persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/gravity/GravityVO.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SensorsManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/manager/SensorsManager.java">
-<persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/manager/SensorsManager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SensorsManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/sensor/SensorsManager.java">
+<persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/sensor/SensorsManager.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpeedPreprocessor.java" tooltip="KoalaController-BTS/src/pl/edy/agh/pros/adk/util/SpeedPreprocessor.java">
-<persistable path="/KoalaController-BTS/src/pl/edy/agh/pros/adk/util/SpeedPreprocessor.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaCommands.java" tooltip="KoalaController-BTS/src/pl/edy/agh/pros/adk/util/KoalaCommands.java">
-<persistable path="/KoalaController-BTS/src/pl/edy/agh/pros/adk/util/KoalaCommands.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ADKSendUtility.java" tooltip="KoalaController-BTS/src/pl/edy/agh/pros/adk/util/ADKSendUtility.java">
-<persistable path="/KoalaController-BTS/src/pl/edy/agh/pros/adk/util/ADKSendUtility.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GravityVO.java" tooltip="KoalaController-BTS/src/pl/edu/agh/pros/bt/server/gravity/GravityVO.java">
-<persistable path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/gravity/GravityVO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BluetoothManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java">
-<persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SensorsManager.java" tooltip="KoalaADK/src/pl/edy/agh/pros/adk/SensorsManager.java">
-<persistable path="/KoalaADK/src/pl/edy/agh/pros/adk/SensorsManager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaActivity.java" tooltip="KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java">
+<persistable path="/KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BluetoothManager.java" tooltip="KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java">
 <persistable path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/blue/BluetoothManager.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BluetoothManager.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java">
+<persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/blue/BluetoothManager.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaControllerClientActivity.java" tooltip="KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java">
 <persistable path="/KoalaController-BTC/src/pl/edu/agh/pros/bt/client/KoalaControllerClientActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaActivity.java" tooltip="KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java">
-<persistable path="/KoalaADK/src/pl/edy/agh/pros/adk/KoalaActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KoalaControllerServerActivity.java" tooltip="KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java">
+<persistable path="/KoalaController-BTS/src/pl/edu/agh/pros/bt/server/KoalaControllerServerActivity.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Handler.class" tooltip="android.os.Handler">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=KoalaController-BTC/\/home\/darek\/Programy\/android-sdk-linux\/platforms\/android-10\/android.jar&lt;android.os(Handler.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ADKSendUtility.java" tooltip="KoalaController-BTS/src/pl/edy/agh/pros/adk/util/ADKSendUtility.java">
+<persistable path="/KoalaController-BTS/src/pl/edy/agh/pros/adk/util/ADKSendUtility.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="control.xml" tooltip="KoalaController-BTC/res/layout/control.xml">
+<persistable path="/KoalaController-BTC/res/layout/control.xml"/>
 </file>
 </mruList>
 </workbench>
