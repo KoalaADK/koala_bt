@@ -1,6 +1,5 @@
 INDEX VERSION 1.126+/home/darek/workspace/koala_bt/.metadata/.plugins/org.eclipse.jdt.core
 1382905221.index
-3833642096.index
 4181175316.index
 2868615248.index
 2010112885.index

@@ -55,6 +55,9 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 					UsbAccessory accessory = UsbManager.getAccessory(intent);
 					if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
 						openAccessory(accessory);
+						if (!toggleButton.isChecked() && mBluetoothManager != null) {
+							mBluetoothManager.stop();
+						}
 					} else {
 						Log.d(TAG, "permission denied for accessory " + accessory);
 					}
@@ -152,8 +155,10 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				if (isChecked) {
-					ensureDiscoverable();
-					mBluetoothManager.start();
+					if (mBluetoothManager.getState() != BluetoothManager.STATE_CONNECTED) {
+						ensureDiscoverable();
+						mBluetoothManager.start();
+					}
 				} else {
 					sendUtility.sendMessage(KoalaCommands.TYPE_SPEED,
 							KoalaCommands.prepareSpeedCommand((byte) 0, (byte) 0));
@@ -292,6 +297,8 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 		try {
 			if (mFileDescriptor != null) {
 				mFileDescriptor.close();
+				mInputStream = null;
+				mOutputStream = null;
 			}
 		} catch (IOException e) {
 		} finally {
@@ -333,11 +340,11 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 		int responseLength = 0;
 		byte[] buffer = new byte[1024];
 
-		while (true) { // read data
+		while (mInputStream != null) { // read data
 			try {
 				responseLength = mInputStream.read(buffer);
 			} catch (IOException e) {
-				openAccessory(mAccessory);
+				// openAccessory(mAccessory);
 				break;
 			}
 

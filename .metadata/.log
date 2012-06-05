@@ -382,3 +382,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2012-06-04 17:54:06.638
 !MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2012-06-05 12:47:18.377 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-06-05 12:58:25.914
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2

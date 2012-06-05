@@ -1,4 +1,4 @@
-#Mon Jun 04 18:26:52 CEST 2012
+#Mon Jun 04 19:29:39 CEST 2012
 content_assist_proposals_foreground=16,16,16
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -17,5 +17,5 @@ org.eclipse.jdt.internal.ui.navigator.layout=2
 content_assist_number_of_computers=16
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="android.os.Parcelable"><rhs name\="android.os.Bundle"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="android.os.Bundle"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

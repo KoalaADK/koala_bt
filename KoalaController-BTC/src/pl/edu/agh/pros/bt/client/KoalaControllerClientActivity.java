@@ -64,6 +64,9 @@ public class KoalaControllerClientActivity extends TabActivity {
 	private ToggleButton toggleButton;
 	private Button connectButton;
 
+	private static final Long INTERVAL = 1000L;
+	private Long previousTime = 0L;
+
 	private Handler gravityHandler = new Handler() {
 
 		GravityVO previous;
@@ -77,7 +80,11 @@ public class KoalaControllerClientActivity extends TabActivity {
 				yView.setText(Integer.toString(t.getY()));
 				zView.setText(Integer.toString(t.getZ()));
 				if (toggleButton.isChecked()) {
-					sendMessageBT(t.getBytes());
+					Long currentTime = System.currentTimeMillis();
+					if (currentTime - previousTime > INTERVAL) {
+						previousTime = currentTime;
+						sendMessageBT(t.getBytes());
+					}
 				}
 			}
 		}
@@ -93,6 +100,7 @@ public class KoalaControllerClientActivity extends TabActivity {
 						case BluetoothManager.STATE_CONNECTED :
 							setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
 							connectButton.setText(R.string.disconnect);
+							connected = true;
 							break;
 						case BluetoothManager.STATE_CONNECTING :
 							setStatus(getString(R.string.title_connecting));
@@ -101,13 +109,11 @@ public class KoalaControllerClientActivity extends TabActivity {
 						case BluetoothManager.STATE_NONE :
 							setStatus(getString(R.string.title_not_connected));
 							connectButton.setText(R.string.connect);
+							connected = false;
 							break;
 					}
 					break;
 				case MESSAGE_READ :
-					if (!toggleButton.isChecked()) {
-						break;
-					}
 					byte[] readBuf = (byte[]) msg.obj;
 					try {
 						if (sensorsManager != null) {
@@ -134,7 +140,7 @@ public class KoalaControllerClientActivity extends TabActivity {
 
 		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 		mGravity = mSensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
-		mSensorManager.registerListener(new GravityListener(gravityHandler), mGravity, SensorManager.SENSOR_DELAY_GAME);
+		mSensorManager.registerListener(new GravityListener(gravityHandler), mGravity, SensorManager.SENSOR_DELAY_UI);
 
 		xView = (TextView) findViewById(R.id.x);
 		yView = (TextView) findViewById(R.id.y);
@@ -236,6 +242,14 @@ public class KoalaControllerClientActivity extends TabActivity {
 			}
 		}
 
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		toggleButton.setChecked(false);
+		sendMessageBT(STOP_SEQUENCE);
+		mBluetoothManager.stop();
 	}
 
 	@Override

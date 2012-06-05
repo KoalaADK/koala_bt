@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="pl.edu.agh.pros.bt.client.R.layout"/>
 <fullyQualifiedTypeName name="pl.edu.agh.pros.bt.client.R"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="pl.edu.agh.pros.bt.server.KoalaControllerServerActivity"/>
+<fullyQualifiedTypeName name="pl.edu.agh.pros.bt.client.R.id"/>
+<fullyQualifiedTypeName name="pl.edu.agh.pros.bt.client.R.string"/>
 </qualifiedTypeNameHistroy>
