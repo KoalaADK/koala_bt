@@ -55,9 +55,6 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 					UsbAccessory accessory = UsbManager.getAccessory(intent);
 					if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
 						openAccessory(accessory);
-						if (!toggleButton.isChecked() && mBluetoothManager != null) {
-							mBluetoothManager.stop();
-						}
 					} else {
 						Log.d(TAG, "permission denied for accessory " + accessory);
 					}
@@ -99,6 +96,7 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 
 	// The Handler that gets information back from the BluetoothManager
 	private final Handler bluetoothHandler = new Handler() {
+
 		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
@@ -157,12 +155,10 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 				if (isChecked) {
 					if (mBluetoothManager.getState() != BluetoothManager.STATE_CONNECTED) {
 						ensureDiscoverable();
-						mBluetoothManager.start();
 					}
 				} else {
 					sendUtility.sendMessage(KoalaCommands.TYPE_SPEED,
 							KoalaCommands.prepareSpeedCommand((byte) 0, (byte) 0));
-					mBluetoothManager.stop();
 				}
 			}
 		});
@@ -208,6 +204,7 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 		} else {
 			mBluetoothManager = new BluetoothManager(this, bluetoothHandler);
 		}
+		mBluetoothManager.start();
 	}
 
 	@Override
@@ -236,15 +233,6 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 	protected void onResume() {
 		super.onResume();
 
-		if (mBluetoothManager != null) {
-			// Only if the state is STATE_NONE, do we know that we haven't
-			// started already
-			if (mBluetoothManager.getState() == BluetoothManager.STATE_NONE) {
-				// Start the Bluetooth services
-				mBluetoothManager.start();
-			}
-		}
-
 		UsbAccessory[] accessories = mUsbManager.getAccessoryList();
 		UsbAccessory accessory = (accessories == null ? null : accessories[0]);
 		if (accessory != null) {
@@ -267,6 +255,7 @@ public class KoalaControllerServerActivity extends Activity implements Runnable 
 	@Override
 	public void onPause() {
 		super.onPause();
+		mBluetoothManager.stop();
 		closeAccessory();
 	}
 
